@@ -8,14 +8,15 @@ IMPORTANCIA = [
     ('C', 'C'),
     ('NUEVO', 'NUEVO'),
     ('NEGOCIACION', 'NEGOCIACION'),
-    ('EMPLEADO', 'EMPLEADO')
+    ('EMPLEADO', 'EMPLEADO'),
+    ('NO APLICA', 'NO APLICA')
 ]
 
 GIRO = [
     ('CONTRATISTAS', 'CON'),
     ('EMPRESAS', 'EMP'),
     ('MAYORISTAS', 'MAY'),
-    ('NO_CLASIFICADO', 'NC'),
+    ('NO_APLICA', 'NO APLICA'),
     ('EMPLEADO', 'EMPLEADO')
 ]
 
@@ -32,7 +33,7 @@ TIPO_CLIENTE = [
     ('MC', 'MC'),
     ('MM', 'MM'),
     ('MF', 'MF'),
-    ('NC', 'NC'),
+    ('NO APLICA', 'NO APLICA'),
     ('EMPLEADO', 'EMPLEADO')
 
 ]
@@ -77,8 +78,7 @@ class res_partner(osv.osv):
                                  "OTR - OTRAS\n"
                                  "MC - MAYORISTA CONTRATISTA\n"
                                  "MM - MAYORISTA MAYORISTA\n"
-                                 "MF - MAYORISTA FERRETERO\n"
-                                 "NC - NO CLASIFICADO"),
+                                 "MF - MAYORISTA FERRETERO"),
         'dealer': fields.selection(TIPO_DEALER, 'Tipo dealer',
                                    help="DP - DEALER PREMIER\n"
                                    "DA - DEALER AUTORIZADO\n"
