@@ -11,7 +11,7 @@
     'website':'www.typrefrigeracion.com.mx',
     'depends': ['base'],
     'update_xml': [
-        'partner_view.xml',
+        'views/partner_view.xml',
         ],
     'installable': True,
     'active': False,
