@@ -8,12 +8,12 @@
         Este modulo agrega la importancia y el tipo de cliente
     """,
     'author': 'oMejia',
-    'website':'www.typrefrigeracion.com.mx',
+    'website': 'www.typrefrigeracion.com.mx',
     'depends': ['base'],
     'update_xml': [
         'views/partner_view.xml',
-        ],
+    ],
     'installable': True,
     'active': False,
-    'certificate' : False,
+    'certificate': False,
 }

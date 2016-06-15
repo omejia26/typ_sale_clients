@@ -56,7 +56,7 @@ REGION = [
     nombradas como campos de tipo seleccion """
 
 
-class res_partner(osv.osv):
+class ResPartner(osv.osv):
     _name = 'res.partner'
     _inherit = 'res.partner'
     _columns = {
